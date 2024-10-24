@@ -1,5 +1,5 @@
 .hero {
-    height: 60vh;
+    height: 80vh;
     background: url('https://source.unsplash.com/1600x900/?clouds') no-repeat center center/cover;
     display: flex;
     justify-content: center;
