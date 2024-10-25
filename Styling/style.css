@@ -16,8 +16,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
     text-align: center;
+    color: var(--text);
+    background-color: var(--background);
 }
 
 .hero h1 {
@@ -26,6 +27,17 @@
 
 .hero p {
     font-size: 1.25rem;
+}
+
+.form-inline button[type="submit"] {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: var(--text);
+}
+
+.form-inline button[type="submit"]:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
 }
 
 /* Nav */
