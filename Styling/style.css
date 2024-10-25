@@ -14,6 +14,17 @@ body {
     background-color: #030308;
 }
 
+/* A */
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+a:hover {
+    color: var(--text);
+}
+
 /* P */
 
 p {
@@ -27,7 +38,6 @@ h2 {
 }
 
 /* Hero Image */
-
 .hero {
     height: 100vh;
     background: url('https://source.unsplash.com/1600x900/?clouds') no-repeat center center/cover;
@@ -40,36 +50,53 @@ h2 {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 4rem;
+    margin-bottom: 1rem;
 }
 
 .hero p {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.form-inline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-inline input[type="search"] {
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+    width: 100%;
+    max-width: 500px;
+    border: none;
+    background-color: rgba(var(--text), 0.1);
+    color: var(--text);
+    transition: background-color 0.3s ease;
+    height: calc(1.9em + .75rem + 2px) !important;
+}
+
+.form-inline input[type="search"]:focus {
+    outline: none;
+    background-color: rgba(var(--text), 0.2);
 }
 
 .form-inline button[type="submit"] {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 0 0.5rem 0.5rem 0;
     background-color: var(--primary);
     border-color: var(--primary);
     color: var(--text);
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .form-inline button[type="submit"]:hover {
     background-color: var(--accent);
     border-color: var(--accent);
-}
-
-/* Nav */
-
-.navbar-brand {
-    color: var(--text);
-}
-
-.nav-link {
-    color: var(--text);
-}
-
-.nav-link:hover {
-    color: var(--accent);
 }
 
 /* Introduction */
@@ -149,4 +176,19 @@ footer a {
 
 .footer-text {
     color: var(--text)
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .form-inline input[type="search"],
+    .form-inline button[type="submit"] {
+        font-size: 1.25rem;
+    }
 }
