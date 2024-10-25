@@ -60,10 +60,6 @@ h2 {
 
 /* Nav */
 
-.navbar {
-    background-color: var(--secondary);
-}
-
 .navbar-brand {
     color: var(--text);
 }
@@ -82,25 +78,57 @@ h2 {
     height: 100vh;
 }
 
+/* Links */
+
+.links {
+    height: 100vh;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.links h2 {
+    margin-bottom: 2rem;
+}
+
+/* CTA */
+
+.cta {
+    height: 50vh;
+}
+
 /* Cards and Buttons */
 
 .card {
     background-color: var(--secondary);
     border: none;
+    border-radius: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .card-title {
     color: var(--text);
+    font-weight: bold;
+    font-size: 1.25rem;
 }
 
 .card-text {
-    color: var(--text);;
+    color: rgba(var(--text), 0.7);
+    line-height: 1.6;
 }
 
 .btn-primary {
     background-color: var(--primary);
     border-color: var(--primary);
     color: var(--text);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .btn-primary:hover {
