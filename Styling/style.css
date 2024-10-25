@@ -83,3 +83,14 @@
     background-color: var(--accent);
     border-color: var(--accent);
 }
+
+/* Footer */
+
+footer {
+    background-color: var(--secondary);
+    color: var(--text);
+}
+
+footer a {
+    color: var(--accent);
+}
