@@ -57,3 +57,29 @@
 .nav-link:hover {
     color: var(--accent);
 }
+
+/* Cards and Buttons */
+
+.card {
+    background-color: var(--secondary);
+    border: none;
+}
+
+.card-title {
+    color: var(--text);
+}
+
+.card-text {
+    color: rgba(var(--text), 0.7);
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: var(--text);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
