@@ -1,0 +1,247 @@
+{
+  "AWS_Services": [
+    {
+      "PutRequest": {
+        "Item": {
+          "Name": {"S": "Amazon S3"},
+          "Link": {"S": "https://aws.amazon.com/s3/"},
+          "Keywords": {"SS": ["storage", "scalable", "object storage", "bucket"]},
+          "Category": {"S": "Storage"},
+          "Description": {"S": "Scalable storage in the cloud."}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "Name": {"S": "AWS Lambda"},
+          "Link": {"S": "https://aws.amazon.com/lambda/"},
+          "Keywords": {"SS": ["compute", "serverless", "event-driven"]},
+          "Category": {"S": "Compute"},
+          "Description": {"S": "Run code without provisioning or managing servers."}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "Name": {"S": "Amazon EC2"},
+          "Link": {"S": "https://aws.amazon.com/ec2/"},
+          "Keywords": {"SS": ["compute", "virtual machine", "scalable"]},
+          "Category": {"S": "Compute"},
+          "Description": {"S": "Scalable virtual servers in the cloud for a variety of applications."}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "Name": {"S": "Amazon RDS"},
+          "Link": {"S": "https://aws.amazon.com/rds/"},
+          "Keywords": {"SS": ["database", "managed", "relational"]},
+          "Category": {"S": "Database"},
+          "Description": {"S": "Managed relational database service with support for multiple database engines."}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "Name": {"S": "Amazon DynamoDB"},
+          "Link": {"S": "https://aws.amazon.com/dynamodb/"},
+          "Keywords": {"SS": ["NoSQL", "database", "managed"]},
+          "Category": {"S": "Database"},
+          "Description": {"S": "Fully managed NoSQL database service for fast and flexible performance."}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "Name": {"S": "Amazon CloudFront"},
+          "Link": {"S": "https://aws.amazon.com/cloudfront/"},
+          "Keywords": {"SS": ["CDN", "content delivery", "edge locations"]},
+          "Category": {"S": "Networking"},
+          "Description": {"S": "Global content delivery network (CDN) service to deliver data, videos, applications, and APIs globally with low latency."}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "Name": {"S": "AWS IAM"},
+          "Link": {"S": "https://aws.amazon.com/iam/"},
+          "Keywords": {"SS": ["identity", "access management", "security"]},
+          "Category": {"S": "Security"},
+          "Description": {"S": "Manage access to AWS services and resources securely."}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "Name": {"S": "Amazon SQS"},
+          "Link": {"S": "https://aws.amazon.com/sqs/"},
+          "Keywords": {"SS": ["messaging", "queue", "event-driven"]},
+          "Category": {"S": "Application Integration"},
+          "Description": {"S": "Message queuing service to decouple and scale microservices, distributed systems, and serverless applications."}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "Name": {"S": "Amazon SNS"},
+          "Link": {"S": "https://aws.amazon.com/sns/"},
+          "Keywords": {"SS": ["notification", "messaging", "pub/sub"]},
+          "Category": {"S": "Application Integration"},
+          "Description": {"S": "Fully managed pub/sub messaging and mobile notifications service."}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "Name": {"S": "Amazon EBS"},
+          "Link": {"S": "https://aws.amazon.com/ebs/"},
+          "Keywords": {"SS": ["block storage", "EC2", "persistent storage"]},
+          "Category": {"S": "Storage"},
+          "Description": {"S": "Block storage service designed for use with Amazon EC2."}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "Name": {"S": "Amazon ECS"},
+          "Link": {"S": "https://aws.amazon.com/ecs/"},
+          "Keywords": {"SS": ["container", "orchestration", "Docker"]},
+          "Category": {"S": "Compute"},
+          "Description": {"S": "Highly scalable, fast container management service that makes it easy to run, stop, and manage Docker containers."}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "Name": {"S": "Amazon EKS"},
+          "Link": {"S": "https://aws.amazon.com/eks/"},
+          "Keywords": {"SS": ["Kubernetes", "container", "orchestration"]},
+          "Category": {"S": "Compute"},
+          "Description": {"S": "Managed Kubernetes service to run Kubernetes on AWS without needing to install and operate your own Kubernetes control plane."}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "Name": {"S": "AWS Glue"},
+          "Link": {"S": "https://aws.amazon.com/glue/"},
+          "Keywords": {"SS": ["ETL", "data integration", "serverless"]},
+          "Category": {"S": "Analytics"},
+          "Description": {"S": "Fully managed ETL (extract, transform, load) service that makes it easy to prepare your data for analytics."}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "Name": {"S": "Amazon Redshift"},
+          "Link": {"S": "https://aws.amazon.com/redshift/"},
+          "Keywords": {"SS": ["data warehouse", "analytics", "SQL"]},
+          "Category": {"S": "Analytics"},
+          "Description": {"S": "Fast, fully managed, petabyte-scale data warehouse service in the cloud."}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "Name": {"S": "Amazon Athena"},
+          "Link": {"S": "https://aws.amazon.com/athena/"},
+          "Keywords": {"SS": ["query", "analytics", "serverless"]},
+          "Category": {"S": "Analytics"},
+          "Description": {"S": "Serverless interactive query service that makes it easy to analyze data in S3 using standard SQL."}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "Name": {"S": "AWS CloudFormation"},
+          "Link": {"S": "https://aws.amazon.com/cloudformation/"},
+          "Keywords": {"SS": ["infrastructure as code", "automation", "deployment"]},
+          "Category": {"S": "Management & Governance"},
+          "Description": {"S": "Create and manage AWS resources with infrastructure as code."}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "Name": {"S": "AWS CloudWatch"},
+          "Link": {"S": "https://aws.amazon.com/cloudwatch/"},
+          "Keywords": {"SS": ["monitoring", "logging", "alerts"]},
+          "Category": {"S": "Management & Governance"},
+          "Description": {"S": "Monitoring and observability service for AWS cloud resources and applications."}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "Name": {"S": "AWS CloudTrail"},
+          "Link": {"S": "https://aws.amazon.com/cloudtrail/"},
+          "Keywords": {"SS": ["logging", "compliance", "security"]},
+          "Category": {"S": "Management & Governance"},
+          "Description": {"S": "Records AWS API calls for your account and delivers log files to you."}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "Name": {"S": "AWS CodePipeline"},
+          "Link": {"S": "https://aws.amazon.com/codepipeline/"},
+          "Keywords": {"SS": ["CI/CD", "automation", "deployment"]},
+          "Category": {"S": "Developer Tools"},
+          "Description": {"S": "Continuous integration and continuous delivery service for fast and reliable application updates."}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "Name": {"S": "AWS CodeBuild"},
+          "Link": {"S": "https://aws.amazon.com/codebuild/"},
+          "Keywords": {"SS": ["build", "CI/CD", "automation"]},
+          "Category": {"S": "Developer Tools"},
+          "Description": {"S": "Fully managed continuous integration service that compiles source code, runs tests, and produces software packages."}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "Name": {"S": "AWS CodeDeploy"},
+          "Link": {"S": "https://aws.amazon.com/codedeploy/"},
+          "Keywords": {"SS": ["deployment", "automation", "CI/CD"]},
+          "Category": {"S": "Developer Tools"},
+          "Description": {"S": "Automates code deployments to any instance."}
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "Name": {"S": "Amazon SageMaker"},
+          "Link": {"S": "https://aws.amazon.com/sagemaker/"},
+          "Keywords": {"SS": ["machine learning", "AI", "development"]},
+          "Category": {"S": "Machine Learning"},
+          "Description": {"S": "Build, train, and deploy machine learning models at scale."}
+        }
+      }
+    }
+  ]
+}
+
