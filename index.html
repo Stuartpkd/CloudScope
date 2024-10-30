@@ -167,17 +167,38 @@
         const resultsDiv = document.getElementById("search-results");
         resultsDiv.innerHTML = ""; // Clear previous results
 
-        if (data.length > 0) {
+        // Log data to check structure
+        console.log("Received Data:", data);
+
+        if (Array.isArray(data) && data.length > 0) {
+          // Create a grid container for cards
+          const gridContainer = document.createElement("div");
+          gridContainer.className =
+            "row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4";
+
+          // Loop through the data to create individual service cards
           data.forEach((service) => {
             const serviceElement = document.createElement("div");
-            serviceElement.className = "service";
+            serviceElement.className = "col";
             serviceElement.innerHTML = `
-                <h5>${service.Name}</h5>
-                <p>${service.Description}</p>
-                <a href="${service.Link}" class="btn btn-primary mt-2">Learn More</a>
+                <div class="card h-100 shadow-lg">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fs-4 fw-bold mb-3">${
+                          service.Name || "Unknown Service"
+                        }</h5>
+                        <p class="card-text mb-auto">${
+                          service.Description || "No description available."
+                        }</p>
+                        <a href="${
+                          service.Link || "#"
+                        }" class="btn btn-primary mt-3 w-100">Learn More</a>
+                    </div>
+                </div>
             `;
-            resultsDiv.appendChild(serviceElement);
+            gridContainer.appendChild(serviceElement);
           });
+
+          resultsDiv.appendChild(gridContainer);
         } else {
           resultsDiv.innerHTML = "<p>No results found.</p>";
         }
