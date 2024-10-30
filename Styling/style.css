@@ -39,14 +39,27 @@ h2 {
 
 /* Hero Image */
 .hero {
+    position: relative;
     height: 100vh;
-    background: url('https://source.unsplash.com/1600x900/?clouds') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: var(--text);
-    background-color: var(--background);
+    overflow: hidden;
+}
+
+#particle-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 1;
 }
 
 .hero h1 {
